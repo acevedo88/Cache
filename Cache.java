@@ -1,3 +1,14 @@
+/*
+ * @author alex acevedo
+ * 
+ * CS 321
+ * Instructor Yeh
+ * 
+ * This class help the Test main class by creating methods that
+ * will be used throughout the Test code.
+ * 
+ */
+
 import java.util.LinkedList;
 
 public class Cache<E> {
@@ -9,41 +20,9 @@ public class Cache<E> {
 		this.inputSize = inputSize;
 		cache = new LinkedList<>();
 	}
+	
 	public int cacheSize() {
 		return inputSize;
-	}
-	
-	public void clear() {
-		cache.clear();
-	}
-	
-	public void removeObject(E obj) {
-		cache.remove(obj);
-	}
-	
-	public void addObject(E obj) {
-		cache.add(obj);
-	}
-	
-	public E getObject(E obj) {
-		return obj;
-	}
-	
-	public void addIndex(int i, E element) {
-		cache.add(i, element);
-	}
-
-
-	public void removeLast() {
-		cache.removeLast();
-	}
-
-	public void removeElement(E element) {
-		cache.remove(element);
-	}
-
-	public E getElement(E element) {
-		return element;
 	}
 
 	public boolean contains(E element) {

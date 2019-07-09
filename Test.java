@@ -35,10 +35,6 @@ public class Test {
 	private static Cache cacheLevelTwo;
 	private static Scanner scan;
 
-	//Used unchecked exceptions
-	
-	@SuppressWarnings("Unchecked")
-	
 	//Main method for the program
 	public static void main(String[] args) {
 		
@@ -90,7 +86,7 @@ public class Test {
 
 					//Prints opening statement with the cache size on the console
 					System.out.println("First level cache with " + cacheLevelOne.cacheSize() + " entries has been created.");
-					System.out.println("......................................................");
+					System.out.println("Loading, Please Wait..................................");
 					
 					//While loop to scan each word within the text
 					while (scan.hasNextLine()) {
@@ -187,7 +183,7 @@ public class Test {
 
 				System.out.println("First level cache with " + cacheLevelOne.cacheSize() + " entries has been created.");
 				System.out.println("Second level cache with " + cacheLevelTwo.cacheSize() + " entries has been created.");
-				System.out.println("......................................................");
+				System.out.println("Loading, Please Wait..................................");
 				
 
 				//While loop that will tokenize all strings and input them into each level accordingly
